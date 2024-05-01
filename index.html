@@ -16,6 +16,31 @@
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-info {
+            text-align: left;
+            margin-left: 20px;
+        }
+        .profile-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+        }
+        .profile-info p {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #ccc;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
         nav {
             background-color: #0056b3;
@@ -49,21 +74,15 @@
             bottom: 0;
             width: 100%;
         }
-        .profile-img {
-            display: block;
-            margin: 0 auto;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
-        <img class="profile-img" src="breadboard.jpg" alt="Anusha">
+        <img class="profile-img" src="your_picture.jpg" alt="Your Name">
+        <div class="profile-info">
+            <h1>Your Name</h1>
+            <p>Welcome to my personal website. I'm excited to share my journey with you!</p>
+        </div>
     </header>
     <nav>
         <a href="#about">About</a>
