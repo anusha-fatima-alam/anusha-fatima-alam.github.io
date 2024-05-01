@@ -10,6 +10,8 @@
             margin: 0;
             padding: 0;
             background-color: #f8f9fa; /* Light gray */
+            margin-left: 20px; /* Side margin */
+            margin-right: 20px; /* Side margin */
         }
         header {
             background-color: #555; /* Dark gray */
@@ -77,7 +79,8 @@
             padding: 10px 0;
             position: fixed;
             bottom: 0;
-            width: 100%;
+            width: calc(100% - 40px); /* Adjusted width considering side margins */
+            left: 20px; /* Align footer to the left edge of side margins */
         }
         footer p {
             color: #fff; /* White */
@@ -89,7 +92,7 @@
         <img class="profile-img" src="anusha.jpg" alt="anusha">
         <div class="profile-info">
             <h1>Anusha Fatima Alam</h1>
-            <p> Welcome to my personal website! I'm currently a second-year student at the University of Toronto, St. George Campus, passionately pursuing a Bachelor's of Applied Science and Engineering (BASc) in Engineering Science. With a focus on Electrical and Computer Engineering, I'm dedicated to exploring the forefront of technology and its applications. Join me as I embark on this exciting journey of learning, growth, and innovation. Explore my website to learn more about my projects, experiences, and aspirations.</p>
+            <p>Welcome to my personal website. Welcome to my personal website! I'm currently a second-year student at the University of Toronto, St. George Campus, passionately pursuing a Bachelor's of Applied Science and Engineering (BASc) in Engineering Science. With a focus on Electrical and Computer Engineering, I'm dedicated to exploring the forefront of technology and its applications. Join me as I embark on this exciting journey of learning, growth, and innovation. Explore my website to learn more about my projects, experiences, and aspirations.</p>
         </div>
     </header>
     <nav>
