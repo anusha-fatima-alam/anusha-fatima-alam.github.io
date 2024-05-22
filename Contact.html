@@ -8,21 +8,20 @@
     <link rel="icon" type="images/fevicon.png" href="/images/fevicon.png">
     <style>
         body {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif; /* Ensuring Lato font is applied */
+            font-family: 'Lato', Verdana, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa; /* Light gray */
+            background-color: #f8f9fa;
         }
         header {
-            background-color: #555; /* Dark gray */
+            background-color: #555;
             color: #fff;
-            padding: 20px 50px; /* Added padding for side margins */
+            padding: 20px 50px;
             text-align: center;
             display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px; /* Added margin to the bottom */
+            margin-bottom: 20px;
         }
         .profile-info {
             text-align: left;
@@ -46,7 +45,7 @@
             margin-bottom: 20px;
         }
         nav {
-            background-color: #888; /* Medium gray */
+            background-color: #888;
             padding: 10px 0;
             text-align: center;
         }
@@ -55,26 +54,26 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
-            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
-            background-color: #666; /* Darker gray on hover */
+            background-color: #666;
         }
         main {
-            padding: 20px 50px; /* Added padding for side margins */
+            padding: 20px 50px;
         }
         section {
             margin-bottom: 80px;
         }
         h2 {
-            color: #444; /* Dark gray */
+            color: #444;
         }
         p {
             line-height: 1.6;
-            color: #666; /* Medium gray */
+            color: #666;
         }
         footer {
-            background-color: #444; /* Dark gray */
+            background-color: #444;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -83,33 +82,61 @@
             bottom: 0;
         }
         footer p {
-            color: #fff; /* White */
+            color: #fff;
         }
         .table-container {
             width: 100%;
             max-width: 800px;
-            margin-right: auto;
-            margin-left: auto;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        .table-container table {
+        .form-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-header h3 {
+            margin: 0;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
             width: 100%;
-            border: 0px;
-            border-spacing: 0px;
-            border-collapse: separate;
-            margin-right: auto;
-            margin-left: auto;
         }
-        .table-container table td {
-            padding: 0;
+        button {
+            padding: 10px 20px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: center;
         }
-        .introduction {
-            color: black; /* Changing font color to black */
+        button:hover {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
     <header>
-        <img class="profile-img" src="images/anusha.jpg" alt="anusha">
+        <img class="profile-img" src="images/anusha.jpg" alt="Anusha">
         <div class="profile-info">
             <h1>Anusha Fatima Alam</h1>
             <p>Welcome to my personal website! I'm currently a third-year student at the University of Toronto, St. George Campus, passionately pursuing a Bachelor's of Applied Science and Engineering (BASc) in Engineering Science. With a focus on Electrical and Computer Engineering, I'm dedicated to exploring the forefront of technology and its applications. Join me as I embark on this exciting journey of learning, growth, and innovation. Explore my website to learn more about my projects, experiences, and aspirations.</p>
@@ -117,51 +144,36 @@
     </header>
     <nav>
         <a href="index.html">Home</a>
-	<a href="IBNotes.html">IB Notes</a>
+        <a href="IBNotes.html">IB Notes</a>
         <a href="UniversityNotes.html">University Notes</a>
         <a href="Portfolio.html">Portfolio</a>
         <a href="Contact.html">Contact</a>
-        <a href="resume.pdf" target="_blank">Resume</a> <!-- Added Resume tab with link to resume.pdf -->
+        <a href="resume.pdf" target="_blank">Resume</a>
     </nav>
-<main>
-    <section>
-        <div class="table-container">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p class="name" style="text-align: center;"><name>Contact Me</name></p>
-                            <p class="introduction">Feel free to reach out and I'm happy to connect. Kindly fill out the form below with your details to share any feedback, ask questions or to simply get in touch. I will try to get back to you in a timely manner.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <form action="https://formspree.io/f/mleqkjyw"  method="POST">
-				<label>Contact Type:</label>
-   					<select name="Contact Type" required>
-     					 <option value="Feedback">Feedback</option>
-     					 <option value="General Question">General Question</option>
-  					 </select>
-				<br>
-				<br>
-				 <label> Your name: <input name="name" type="text" required/></label>
-				<br>
-				<br>
- 				 <label> Your email: <input type="email" name="email">  </label>
-				 <br>
-				 <br>
-				 <label> Your message: <textarea name="message" required></textarea> </label>
-				<br>
-				<br>
-  				<button type="submit">Send</button>
-			</form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-</main>
+    <main>
+        <section>
+            <div class="table-container">
+                <div class="form-header">
+                    <h3>Contact Me</h3>
+                    <p>Feel free to reach out and I'm happy to connect. Fill out the form below to share any concerns or inquiries or to simply get in touch.</p>
+                </div>
+                <form action="https://formspree.io/f/mleqkjyw" method="POST">
+                    <label for="contact-type">Contact Type:</label>
+                    <select name="Contact Type" id="contact-type" required>
+                        <option value="Feedback">Feedback</option>
+                        <option value="General Question">General Question</option>
+                    </select>
+                    <label for="name">Your Name:</label>
+                    <input name="name" id="name" type="text" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 My Personal Website. All rights reserved.</p>
     </footer>
