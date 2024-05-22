@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Anusha Fatima Alam</title>
+    <link rel="icon" type="images/fevicon.png" href="/images/fevicon.png">
+    <style>
+        body {
+            font-family: 'Lato', Verdana, Helvetica, sans-serif; /* Ensuring Lato font is applied */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light gray */
+        }
+        header {
+            background-color: #555; /* Dark gray */
+            color: #fff;
+            padding: 20px 50px; /* Added padding for side margins */
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Added margin to the bottom */
+        }
+        .profile-info {
+            text-align: left;
+            margin-left: 20px;
+        }
+        .profile-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #fff;
+        }
+        .profile-info p {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #ccc;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #888; /* Medium gray */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
+        }
+        nav a:hover {
+            background-color: #666; /* Darker gray on hover */
+        }
+        main {
+            padding: 20px 50px; /* Added padding for side margins */
+        }
+        section {
+            margin-bottom: 80px;
+        }
+        h2 {
+            color: #444; /* Dark gray */
+        }
+        p {
+            line-height: 1.6;
+            color: #666; /* Medium gray */
+        }
+        footer {
+            background-color: #444; /* Dark gray */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        footer p {
+            color: #fff; /* White */
+        }
+        .table-container {
+            width: 100%;
+            max-width: 800px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .table-container table {
+            width: 100%;
+            border: 0px;
+            border-spacing: 0px;
+            border-collapse: separate;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .table-container table td {
+            padding: 0;
+        }
+        .introduction {
+            color: black; /* Changing font color to black */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="profile-img" src="images/anusha.jpg" alt="anusha">
+        <div class="profile-info">
+            <h1>Anusha Fatima Alam</h1>
+            <p>Welcome to my personal website! I'm currently a third-year student at the University of Toronto, St. George Campus, passionately pursuing a Bachelor's of Applied Science and Engineering (BASc) in Engineering Science. With a focus on Electrical and Computer Engineering, I'm dedicated to exploring the forefront of technology and its applications. Join me as I embark on this exciting journey of learning, growth, and innovation. Explore my website to learn more about my projects, experiences, and aspirations.</p>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+	<a href="IBNotes.html">IB Notes</a>
+        <a href="UniversityNotes.html">University Notes</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact.html">Contact</a>
+        <a href="resume.pdf" target="_blank">Resume</a> <!-- Added Resume tab with link to resume.pdf -->
+    </nav>
+<main>
+    <section>
+        <div class="table-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="name" style="text-align: center;"><name>Contact Me</name></p>
+                            <p class="introduction">Feel free to reach out and I'm happy to connect. Fill out the form below to share any concerns or inquiries or to simply get in touch.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form action="send_email.php" method="post">
+                                <label for="name">Name:</label><br>
+                                <input type="text" id="name" name="name" required><br><br>
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" required><br><br>
+                                <label for="message">Message:</label><br>
+                                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                                <input type="submit" value="Send Message">
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
