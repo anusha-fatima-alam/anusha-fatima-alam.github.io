@@ -137,13 +137,18 @@
                     <tr>
                         <td>
                             <form action="https://formspree.io/f/mleqkjyw"  method="POST">
-				 <label> Your name: <textarea name="name"></textarea></label>
+				<label>Contact Type:</label>
+   					<select name="Contact Type" required>
+     					 <option value="Feedback">Feedback</option>
+     					 <option value="General Question">General Question</option>
+  					 </select>
+				 <label> Your name: <input name="name" type="text" required/><</label>
 				<br>
 				<br>
  				 <label> Your email: <input type="email" name="email">  </label>
 				 <br>
 				 <br>
-				 <label> Your message: <textarea name="message"></textarea> </label>
+				 <label> Your message: <textarea name="message" required></textarea> </label>
 				<br>
 				<br>
   				<button type="submit">Send</button>
