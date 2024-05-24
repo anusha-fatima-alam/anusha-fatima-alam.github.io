@@ -6,22 +6,24 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Anusha Fatima Alam</title>
     <link rel="icon" type="images/fevicon.png" href="/images/fevicon.png">
-    <style>
+
+	<style>
         body {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
+            font-family: 'Lato', Verdana, Helvetica, sans-serif; /* Ensuring Lato font is applied */
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: #f8f9fa; /* Light gray */
         }
         header {
-            background-color: #555;
+            background-color: #032148; /* Dark gray */
             color: #fff;
-            padding: 20px 50px;
+            padding: 20px 50px; /* Added padding for side margins */
             text-align: center;
             display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* Added margin to the bottom */
         }
         .profile-info {
             text-align: left;
@@ -45,7 +47,7 @@
             margin-bottom: 20px;
         }
         nav {
-            background-color: #888;
+            background-color: #055BA7; /* Medium gray */
             padding: 10px 0;
             text-align: center;
         }
@@ -54,26 +56,26 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease; /* Smooth transition for background color change */
         }
         nav a:hover {
-            background-color: #666;
+            background-color: #666; /* Darker gray on hover */
         }
         main {
-            padding: 20px 50px;
+            padding: 20px 50px; /* Added padding for side margins */
         }
         section {
             margin-bottom: 80px;
         }
         h2 {
-            color: #444;
+            color: #444; /* Dark gray */
         }
         p {
             line-height: 1.6;
-            color: #666;
+            color: #666; /* Medium gray */
         }
         footer {
-            background-color: #444;
+            background-color: #133E75; /* Dark gray */
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -82,60 +84,27 @@
             bottom: 0;
         }
         footer p {
-            color: #fff;
+            color: #fff; /* White */
         }
         .table-container {
             width: 100%;
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin-right: auto;
+            margin-left: auto;
         }
-        .form-header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form-header h3 {
-            margin: 0;
-            color: #333;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin-bottom: 10px;
-            color: #333;
-            font-weight: bold;
-        }
-        input, textarea, select {
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
+        .table-container table {
             width: 100%;
+            border: 0px;
+            border-spacing: 0px;
+            border-collapse: separate;
+            margin-right: auto;
+            margin-left: auto;
         }
-        button {
-            padding: 10px 20px;
-            background-color: #555;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            align-self: center;
+        .table-container table td {
+            padding: 0;
         }
-        button:hover {
-            background-color: #333;
-        }
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+        .about-me-paragraph {
+            color: black; /* Changing font color to black */
         }
     </style>
 </head>
